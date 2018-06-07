@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Josefin+Sans" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Keegan Shea | Web Developer</title>
+    </head>
+    <body>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        
+        <div class="navigation__background">&nbsp;</div>
+        
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#section-work" class="navigation__link">My Work</a></li>
+            <li class="navigation__item"><a href="#section-about" class="navigation__link">About Me</a></li>
+            <li class="navigation__item"><a href="#section-contacts" class="navigation__link">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <header class="header">
+       
+        
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">Keegan Shea</span>
+            <span class="heading-primary--separator">&nbsp;</span>
+            <span class="heading-primary--sub">Web Developer</span>
+          </h1>
+        </div>
+      </header>
+      
+      <section id="section-work" class="section-work">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            My work examples
+          </h2>
+        </div>  
+          <div class="row">
+            <div class="col-1-of-4 site">
+              
+                <a href="https://grecos.herokuapp.com/" target="#blank" class="site__link"><img src="./img/grecos.jpg" alt="grecos" class="site__img">
+                
+                </a>
+              
+            </div>
+            <div class="col-3-of-4">
+              <div class="site__text">
+                <h2 class="heading-tertiary">React/Redux - Greco's Pizza Delivery</h2>
+                <a class="btn-text" href="https://grecos.herokuapp.com/" target="_blank">&#9778; View Site &#9778;</a>
+                <a class="btn-text" href="https://github.com/Keggatron/grecos" target="_blank">&#9778; Github Repo &#9778;</a>
+                <p class="paragraph">
+                  This project is for an imaginary pizza parlour named Greco's. I wanted to make this when I originally learned how to build a website, I was going to ask
+                  one of the pizza places in town if they needed a website. However after looking, I saw that they had already had one. Anyway I decided to build the app as it would be
+                  a good project to put what I've learned into action as well as learn a few other things. This app uses a wizard Redux-Form to store the values of each order and submit
+                  them to the database. I implemented socket.io to update the admin page automatically whenever a new order comes in. This allows for the owner of the app to keep an updated view of orders 
+                  awaiting to be delivered. Once the order is completed the admin would press the completed button to remove that order from the 'Open Orders' table on the admin page. One 
+                  of the cells has a running count of the minutes since ordering, when the counter gets past 30 minutes the style is changed from green to red to indicate that the order 
+                  is pushing peak delivery time. 
+                  <br>
+                  <br>
+                  To view in action open two tabs and navigate one tab to the <a class="paragraph__link" href="https://grecos.herokuapp.com/admin" target="_blank">admin page.</a> Once you've submitted an order, it should 
+                  automatically update on the admin side.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            
+            <div class="col-3-of-4">
+              <div class="site__text">
+                <h2 class="heading-tertiary">React - Weather Forecast App</h2>
+                <a class="btn-text" href="https://react-weather-forecast-keegan.herokuapp.com/" target="_blank">&#9778; View Site &#9778;</a>
+                <a class="btn-text" href="https://github.com/Keggatron/weather-forecaster" target="_blank">&#9778; Github Repo &#9778;</a>
+                <p class="paragraph">
+                  I built this as a project after finishing Tyler McGinnis' React Fundamentals course on his website. Basically it allows you to search for a city then makes an API call
+                  to openweathermap.org and returns the five day forecast for that specific city. You can click on each day to view the min and max temperatures as well as humidity and 
+                  weather description. 
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4 site">
+              
+                <a href="https://react-weather-forecast-keegan.herokuapp.com/" target="#blank" class="site__link"><img src="./img/weather-forecast.jpg" alt="weather" class="site__img">
+                
+                </a>
+              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-1-of-4 site">
+              
+                <a href="https://fast-plains-42499.herokuapp.com/" target="#blank" class="site__link"><img src="./img/store.jpg" alt="grecos" class="site__img">
+                
+                </a>
+              
+            </div>
+            <div class="col-3-of-4">
+              <div class="site__text">
+                <h2 class="heading-tertiary">React/Redux - UPC Inventory App</h2>
+                <a class="btn-text" href="https://fast-plains-42499.herokuapp.com/" target="_blank">&#9778; View Site &#9778;</a>
+                <a class="btn-text" href="https://github.com/Keggatron/storeProject" target="_blank">&#9778; Github Repo &#9778;</a>
+                <p class="paragraph">
+                  This was the first project I completed upon finishing Stephen Grider's highly rated 'Modern React with Redux' course on Udemy. I developed it with the idea that 
+                  business owner's would be able to use to fill out an online inventory for their store. What it does is it takes the UPC and makes an API call to upcitemdb.com and 
+                  returns a bunch of different data which would save the business owner time in not having to find pictures or descriptions of the product. In it's current state 
+                  it's not very user friendly as entering the UPC of each product would be more cumbersome than going and getting a description and images of the product. But 
+                  my intentions are to come back to it in the future after learning mobile development to add a barcode scanner that can be used from a person's phone. 
+                </p>
+              </div>
+            </div>
+          </div>
+          
+           <div class="row">
+            
+            <div class="col-3-of-4">
+              <div class="site__text">
+                <h2 class="heading-tertiary">Express - littleBean</h2>
+                <a class="btn-text" href="https://dry-anchorage-86909.herokuapp.com/" target="_blank">&#9778; View Site &#9778;</a>
+                <a class="btn-text" href="https://github.com/Keggatron/littleBean" target="_blank">&#9778; Github Repo &#9778;</a>
+                <p class="paragraph">
+                  This project was brought on by a friend asking if I could build him a website for his coffee distribution business. He didn't really give me much of a scope for the project so I went ahead and built something
+            that I envisioned it working out as. I included authentication in this website along with email verification for newly created accounts. Inside the users' page I have tabs for open orders as well as completed orders
+            that the customer can view. Also customers are able to edit their orders from the user page or delete them. There is a separate Order page for creating new orders. For the admin account, the users' page shows all of 
+            the open orders for the business, along with a completion button once the order has been filled. All in all I think this was a great learning experience that built confidence in my abilities with the MEN stack!
+            <br>
+            <strong>ADMIN LOGIN: admin@littlebeancoffeecompany.com PASSWORD: password</strong>
+            <br>
+            <strong>USER LOGIN: keeganrmshea@gmail.com PASSWORD: password</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4 site">
+                <a href="https://dry-anchorage-86909.herokuapp.com/" target="#blank" class="site__link"><img src="./img/littlebean.jpg" alt="weather" class="site__img">
+                </a>
+            </div>
+          </div>
+          
+          
+      </section>
+      
+      <section id="section-about" class="section-about">
+        <div class="u-center-text u-margin-bottom-medium  u-padding-top-big">
+          <h2 class="heading-secondary">
+            About Me
+          </h2>
+        </div>  
+        <div class="about">
+          <div class="about__text">
+            <p class="paragraph ">I'm a full stack developer that has been learning and developing 
+            for 2 years with experience in Node, React, Express and MongoDB among other technologies. I'm currently living in 
+            Yellowknife, NT Canada but am looking for any opportunities that will possibly take me elsewhere.
+            <br/>
+            <br/>
+            In the summers I love fishing, camping, hiking and just generally being outdoors. In the
+            winters I spend my time mostly playing hockey or flag football. I enjoy the idea that with web 
+            development, you can take an empty canvas and turn it into essentially anything you want. It's a 
+            very exciting prospect.
+            <br/>
+            <br/>
+            Currently I am looking to take on projects in order to grow my portfolio and continue my education.
+            If you would like to work with me, please use the contact icons for various social networks below.
+            </p> 
+            
+          </div>
+        </div>
+      </section>
+      
+      <section id="section-contacts" class="section-contacts">
+        <div class="contacts">
+          <p class="paragraph">&copy; 2018 <a href="http://keegansportfolio.herokuapp.com/mailto:keeganrmshea@gmail.com" class="paragraph__link"> KEEGAN SHEA.</a> MADE IN CANADA </p>
+          <a class="contacts__links fa fa-facebook" href="https://www.facebook.com/keegan.shea.9"   target="_blank"></a>
+          <a class="contacts__links fa fa-github" href="https://github.com/Keggatron" target="_blank"><i class="github icon large" ></i></a>
+          <a class="contacts__Links fa fa-linkedin" href="https://www.linkedin.com/in/keegan-shea-777269127/" target="_blank"><i class= "linkedin square icon large"></i></a>
+          <a class="contacts__Links fa fa-twitter" href="https://twitter.com/kangstashizea?lang=en" target="_blank"><i class= "linkedin square icon large"></i></a>
+        </div>
+      </section>
+    </body>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</html>

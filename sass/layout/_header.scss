@@ -1,0 +1,17 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, .2),
+    rgba($color-primary-dark, 1)),
+  url(../img/inside-channel.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  
+  &__text-box {
+    padding: 5% 20%;
+  }
+}

@@ -1,0 +1,17 @@
+.about {
+  width: 70%;
+  margin: auto;
+  // height: 50rem;
+  
+  &__text {
+    color: $color-grey-light;
+    
+     & > .paragraph {
+        text-align: center;
+        padding-bottom: 15%;
+      }
+    
+  }
+  
+ 
+}
